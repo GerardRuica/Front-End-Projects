@@ -11,13 +11,20 @@ body {
   height: 200px;
 }
 
-.header-style h1 {
+.name h1,
+.name h3 {
   margin: 0;
-  padding-bottom: 10px;
 }
 
-.header-style h3 {
-  margin: 0;
+.personal-image {
+  text-align: center;
+}
+
+.personal-image img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
 }
 
 .content {
@@ -27,7 +34,6 @@ body {
 }
 
 .personal-info {
-  display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-right: 25px;
@@ -35,9 +41,97 @@ body {
   text-align: justify;
 }
 
+.personal-details h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.personal-details p {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.image-name img {
+  width: 200px;
+  height: 200;
+}
+
+.image-name h1,
+.image-name h3 {
+  padding: 0;
+  margin: 0;
+}
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.list-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-title {
+  margin: 0;
+}
+
+.custom-info {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+.technical-skills li {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0;
+  align-items: center;
+}
+
+.technical-skills ol {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.technical-skills img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.experience-formation {
+  max-width: 500px;
+}
+
+.experience-formation h3 {
+  margin: 0;
+}
+
+.experience ol {
+  margin-top: 0;
+  padding-top: 0;
+  list-style-type: disc;
+}
+
+.experience p {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 5px;
+  height: 5px;
+  background-color: rgb(107, 101, 101);
 }
