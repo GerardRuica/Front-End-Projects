@@ -1,13 +1,33 @@
+html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui;
+  color: #d9e1ef;
+  background-color: #0f172a;
+}
+
+p,
+li {
+  color: #94a3b8;
+}
+
+h3 {
+  color: #b8c6e2;
 }
 
 header {
-  background-color: blueviolet;
+  /*background-color: blueviolet;*/
   display: flex;
   flex-direction: column;
+}
+
+main {
+  flex: 1;
+  /*background-color: rgb(167, 101, 101);*/
 }
 
 .logo-name img {
@@ -21,7 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgb(42, 165, 118);
+  /*background-color: rgb(42, 165, 118);*/
   height: 50px;
 }
 
@@ -38,7 +58,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  /*background-color: aqua;*/
   height: 200px;
 }
 
@@ -46,7 +66,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: blanchedalmond;
+  /*background-color: blanchedalmond;*/
   padding: 20px;
 }
 
@@ -56,33 +76,49 @@ header {
 }
 
 .personal-info h2,
-.personal-info h3,
-.personal-info p,
-.reviews h2 {
+.personal-info p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.personal-info h3 {
   padding: 0;
   margin: 0;
 }
 
 .reviews {
   padding: 20px;
-  background-color: rgb(235, 160, 222);
+  /*background-color: rgb(235, 160, 222);*/
+}
+
+.reviews h2 {
+  padding: 0 0 0 10px;
+  margin: 0;
 }
 
 .recommendation-card-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: rgb(228, 216, 112);
+  /*background-color: rgb(228, 216, 112);*/
 }
 
 .recommendation-card {
   flex: 1;
+  padding: 10px;
+  background-color: #191c27;
   margin: 10px;
+  border: 2px solid black;
+  border-radius: 1%;
 }
 
 .recommendation-card p {
   padding: 0;
-  margin: 10 0 0 0;
+  margin: 0 0 10px 0;
+}
+
+.recommendation-info {
+  color: #8499b6;
 }
 
 footer {
@@ -90,5 +126,64 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
+  /*background-color: aquamarine;*/
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-name {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    height: 150px;
+    font-size: 18px;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personal-info section {
+    margin: 10px 0;
+  }
+
+  .projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .experience h2,
+  .education h2,
+  .reviews h2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .recommendation-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recommendation-card {
+    margin: 10px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
