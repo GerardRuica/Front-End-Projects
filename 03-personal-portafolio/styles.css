@@ -58,8 +58,20 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   /*background-color: aqua;*/
-  height: 200px;
+  height: 300px;
+  font-size: 30px;
+  margin: 0;
+}
+
+.title h2,
+h1 {
+  margin: 0;
+}
+
+.title h2 {
+  color: #adc5f3;
 }
 
 .personal-info {
