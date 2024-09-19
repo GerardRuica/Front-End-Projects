@@ -9,25 +9,18 @@
     />
     <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh" />
     <meta name="author" content="Gerard Ruiz" />
-    <link rel="stylesheet" href="styles.css" />
     <title>Página html básica</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("./html/navbar.html");
+      });
+    </script>
   </head>
   <body>
     <header>
-      <div class="nav-bar">
-        <div class="logo-name">
-          <img src="" />
-          <span>Gerard Ruiz Caro</span>
-        </div>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Inicio </a></li>
-            <li><a href="projects.html">Proyectos</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div id="navbar"></div>
       <div class="title">
         <h1>Gerard Ruiz Caro</h1>
         <h2>Full Stack Developer</h2>
@@ -208,7 +201,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <ul>
         <li>

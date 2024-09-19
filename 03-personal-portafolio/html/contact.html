@@ -9,26 +9,20 @@
       content="Frontend Project, HTML, Roadmap.sh, contact"
     />
     <meta name="author" content="Gerard Ruiz" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>Contacto | Página html básica</title>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("../html/navbar.html");
+      });
+    </script>
   </head>
   <body>
     <header>
-      <div class="nav-bar">
-        <div class="logo-name">
-          <img src="" />
-          <span>Gerard Ruiz Caro</span>
-        </div>
-
-        <nav>
-          <ul>
-            <li><a href="index.html">Inicio </a></li>
-            <li><a href="projects.html">Proyectos</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div id="navbar"></div>
     </header>
+
     <main>
       <a
         class="contact-card"
