@@ -164,6 +164,8 @@ h3,
 .about-me-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .basic-card {
@@ -299,4 +301,91 @@ h3,
 
 .contact svg:hover {
   fill: #63dbd5;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me-img img {
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me-img {
+    margin: 0;
+  }
+
+  .project-card {
+    width: 95%;
+  }
+
+  main section {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section {
+    margin-bottom: 100px;
+  }
+
+  .all-content {
+    margin: 0% 5%;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 175px;
+    justify-content: center;
+  }
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .title h2 {
+    font-size: 40px;
+  }
+
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me-img img {
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me-img {
+    margin: 0;
+  }
+
+  .project-card a {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: -20px;
+    padding: 20px 0 20px 0;
+  }
+
+  .project-img {
+    margin-left: 20px;
+  }
+
+  .contact svg {
+    width: 30px;
+    height: 30px;
+    fill: #95a3b7;
+  }
 }
