@@ -22,52 +22,48 @@
   <body>
     <div id="navbar"></div>
     <div class="all-content">
-      <header>
+      <header id="home">
         <div class="title">
           <h1>Gerard Ruiz Caro</h1>
           <h2>Full Stack Developer</h2>
-          <p class="description">
-            Soy ingeniero informático recién graduado en la Universidad Autónoma
-            de Barcelona, con un gran interés en el mundo del desarrollo Full
-            Stack. Me apasiona el mundo de la tecnología, informándome día a día
-            en las novedades de este.
-          </p>
         </div>
       </header>
       <main>
         <section class="about-me">
           <div class="about-me-info">
             <h2>Sobre mi</h2>
-            <p>
-              ¡Hola! Mi nombre es Gerard Ruiz y soy Ingeniero Informático. Desde
-              bien pequeño me ha apasionado el mundo de la tecnología, más
-              exactamente, desde los 6 añitos, cuándo tuve la oportunidad de
-              tocar mi primer ordenador. Gracias a este interés y la curiosidad
-              de saber cómo funcionan los ordenadores, me llevaron a querer
-              estudiar la carrera de mis sueños, ingeniería informática. Tuve la
-              oportunidad de estudiar ingeniería informática en la Universidad
-              Autónoma de Barcelona, dónde pude entender y adquirir todos los
-              conocimientos por los que me sentía tan apasionado.
-            </p>
+            <div class="about-me-content">
+              <p>
+                ¡Hola! Mi nombre es Gerard y soy Ingeniero Informático. Desde
+                bien pequeño me ha apasionado el mundo de la tecnología, más
+                exactamente, desde los 6 añitos, cuándo tuve la oportunidad de
+                tocar mi primer ordenador. Gracias a este interés y la
+                curiosidad de saber cómo funcionan los ordenadores, me llevaron
+                a querer estudiar la carrera de mis sueños, ingeniería
+                informática. Tuve la oportunidad de estudiar ingeniería
+                informática en la Universidad Autónoma de Barcelona, dónde pude
+                entender y adquirir todos los conocimientos por los que me
+                sentía tan apasionado.
+                <br /><br />
+                Actualmente, me encuentro en búsqueda de trabajo, interesado en
+                el desarrollo Full Stack, que es lo que más me ha llamado la
+                atención bajo mi previa experiencia, tanto en la universidad,
+                cómo en las prácticas empresariales que tuve la oportunidad de
+                realizar en mis estudios universitarios.
+              </p>
 
-            <p>
-              Actualmente, me encuentro en búsqueda de trabajo, interesado en el
-              desarrollo Full Stack, que es lo que más me ha llamado la atención
-              bajo mi previa experiencia, tanto en la universidad, cómo en las
-              prácticas empresariales que tuve la oportunidad de realizar en mis
-              estudios universitarios.
-            </p>
-          </div>
-          <div class="about-me-img">
-            <img src="./images/icons/gerard-ruiz.png" />
+              <div class="about-me-img">
+                <img src="./images/icons/gerard-ruiz.png" />
+              </div>
+            </div>
           </div>
         </section>
 
-        <section class="experience">
+        <section id="experience" class="experience">
           <h2>Experiencia</h2>
-          <div class="experience-card">
+          <div class="basic-card">
             <a href="https://wattwin.com/" target="_blank">
-              <div class="experience-info">
+              <div class="basic-card-info">
                 <div class="card-title">
                   <div class="card-name">
                     <h3>Wattwin</h3>
@@ -120,7 +116,7 @@
           </div>
         </section>
 
-        <section class="education">
+        <section id="education" class="education">
           <h2>Educación</h2>
 
           <h3>
@@ -132,7 +128,7 @@
             <li>C</li>
             <li>Java</li>
             <li>Python</li>
-            <li>JavaScrip</li>
+            <li>JavaScript</li>
             <li>PHP</li>
             <li>HTML</li>
             <li>CSS</li>
@@ -149,7 +145,7 @@
           <p>IES Pablo Ruiz Picasso | 2016 - 2019</p>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
           <h2>Proyectos</h2>
           <div class="project-card">
             <a
@@ -183,119 +179,183 @@
               </div>
             </a>
           </div>
+          <div class="project-card">
+            <a
+              href="https://github.com/GerardRuica/Front-End-Projects/tree/main/03-personal-portafolio"
+              target="_blank"
+            >
+              <div class="project-img">
+                <img src="images/projects-images/portfolio.png" />
+              </div>
+
+              <div class="project-description">
+                <div class="card-title">
+                  <div class="card-name">
+                    <h3>Portafolio personal</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35">
+                      <path
+                        d="M 21.332031 4.292969 L 19.917969 5.707031 L 24.210938 10 L 22 10 C 14.832031 10 9 15.832031 9 23 L 11 23 C 11 16.914063 15.914063 12 22 12 L 24.210938 12 L 19.917969 16.292969 L 21.332031 17.707031 L 28.039063 11 Z M 5 11 L 5 27 L 27 27 L 27 21 L 25 21 L 25 25 L 7 25 L 7 11 Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p>
+                  He realizado este portafolio básico desde 0 y lo he subido a
+                  github, para que el resto de la comunidad pueda tener acceso a
+                  el como ejemplo o como plantilla
+                </p>
+                <ul class="technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </a>
+          </div>
         </section>
 
-        <section class="reviews">
+        <section id="reviews" class="reviews">
           <h2>Recomendaciones</h2>
-          <div class="recommendation-card-container">
-            <div class="recommendation-card">
-              <p class="recommendation-content">
-                Tuve el placer de trabajar con Gerard Ruiz durante un año en
-                Wattwin, donde se desempeñó como Full Stack Developer. Gerard
-                destacó por desarrollar funcionalidades clave en frontend y
-                backend durante su proyecto de mejora del flujo de alta de
-                usuarios y la implementación de sistemas de seguridad como
-                Single Sign-On y autenticación de dos factores (2FA).
-                Técnicamente, Gerard es excelente en el desarrollo de
-                componentes visuales con Angular y servicios en el backend con
-                Node.js, asegurando siempre la calidad y funcionalidad sin
-                errores. Su capacidad para encontrar y solucionar edge cases fue
-                crucial para la satisfacción del usuario y el éxito de nuestros
-                proyectos. Además, Gerard es una persona colaborativa y
-                comunicativa, que se integra fácilmente en el equipo y siempre
-                muestra buena voluntad y deseo de mejorar. Aprecio especialmente
-                su habilidad para planificar y ejecutar proyectos de manera
-                efectiva y proponer mejoras significativas. Gerard se distingue
-                por su esfuerzo, actitud positiva y capacidad analítica. Aunque
-                aún tiene mucho que aprender, está en un excelente punto de
-                partida para su carrera profesional. Recomendaría a Gerard para
-                cualquier puesto de desarrollo de software, donde estoy seguro
-                de que será una valiosa adición a cualquier equipo.
-              </p>
+          <div class="basic-card">
+            <a
+              href="https://www.linkedin.com/in/jose-malaguilla/"
+              target="_blank"
+            >
+              <div class="basic-card-info">
+                <div class="card-title">
+                  <div class="card-name">
+                    <h3>Jose Maria Malaguilla Morales</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35">
+                      <path
+                        d="M 21.332031 4.292969 L 19.917969 5.707031 L 24.210938 10 L 22 10 C 14.832031 10 9 15.832031 9 23 L 11 23 C 11 16.914063 15.914063 12 22 12 L 24.210938 12 L 19.917969 16.292969 L 21.332031 17.707031 L 28.039063 11 Z M 5 11 L 5 27 L 27 27 L 27 21 L 25 21 L 25 25 L 7 25 L 7 11 Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>
+                    Senior Full Stack Developer | Software Engineer | Tech Lead
+                    | Node.js & Angular Specialist en Wattwin
+                  </h4>
+                </div>
+                <p>
+                  Tuve el placer de trabajar con Gerard Ruiz durante un año en
+                  Wattwin, donde se desempeñó como Full Stack Developer. Gerard
+                  destacó por desarrollar funcionalidades clave en frontend y
+                  backend durante su proyecto de mejora del flujo de alta de
+                  usuarios y la implementación de sistemas de seguridad como
+                  Single Sign-On y autenticación de dos factores (2FA).
+                  Técnicamente, Gerard es excelente en el desarrollo de
+                  componentes visuales con Angular y servicios en el backend con
+                  Node.js, asegurando siempre la calidad y funcionalidad sin
+                  errores. Su capacidad para encontrar y solucionar edge cases
+                  fue crucial para la satisfacción del usuario y el éxito de
+                  nuestros proyectos. Además, Gerard es una persona colaborativa
+                  y comunicativa, que se integra fácilmente en el equipo y
+                  siempre muestra buena voluntad y deseo de mejorar. Aprecio
+                  especialmente su habilidad para planificar y ejecutar
+                  proyectos de manera efectiva y proponer mejoras
+                  significativas. Gerard se distingue por su esfuerzo, actitud
+                  positiva y capacidad analítica. Aunque aún tiene mucho que
+                  aprender, está en un excelente punto de partida para su
+                  carrera profesional. Recomendaría a Gerard para cualquier
+                  puesto de desarrollo de software, donde estoy seguro de que
+                  será una valiosa adición a cualquier equipo.
+                </p>
+              </div>
+            </a>
+          </div>
 
-              <p class="recommendation-info">
-                <a
-                  href="https://www.linkedin.com/in/jose-malaguilla/"
-                  target="_blank"
-                >
-                  Jose Maria Malaguilla Morales
-                  <br />
-                  Senior Full Stack Developer | Software Engineer | Tech Lead |
-                  Node.js & Angular Specialist en Wattwin
-                </a>
-              </p>
-            </div>
-            <div class="recommendation-card">
-              <p class="recommendation-content">
-                Ha sido todo un placer trabajar con Gerard este último año. He
-                podido presenciar su evolución día a día, ya que he sido uno de
-                sus mentores durante su estancia en la empresa, y puedo asegurar
-                que ha tenido una evolución sobresaliente y una actitud
-                ejemplar. Además ha sabido adaptarse muy rápido a nuestra
-                metodología y forma de trabajar. Por ello, destacar su capacidad
-                de autoaprendizaje, ya que, con poca experiencia en el sector,
-                ha sabido afrontar tareas complejas él solo. Ha aportado mucho
-                al equipo, tanto personal como laboralmente, demostrando que es
-                un gran compañero; estoy seguro que no lo olvidaremos. Durante
-                este año de trabajo, ha estado principalmente trabajando en el
-                proyecto del Autosetup, el cual es un proyecto muy importante
-                para Wattwin, ya que permitirá abrirnos al mercado y abarcar a
-                más clientes sin necesidad de intervenir inicialmente en el
-                setup. Su desarrollo ha conllevado la refactorización del login
-                y registro, para permitir el auto registro, así como la
-                implementación del 2FA (Doble factor de autenticación) y la
-                integración de Wattwin con Microsoft para habilitar el Single
-                Sign On, mejorando así la seguridad en el proceso de
-                autenticación de nuestros clientes. Todo ello desarrollado en
-                tiempos que incluso han superando las planificaciones, así como
-                la excelente calidad de su trabajo. Se que llegará lejos en este
-                mundillo, ya que lo vale y lo ha demostrado día a día en
-                Wattwin. Por esto, y todo lo que nos ha aportado, recomiendo
-                encarecidamente a Gerard, estoy seguro que en cualquier otro
-                puesto de trabajo dará la talla y podrá integrarse sin
-                problemas. Le espera un buen futuro, no tengo dudas.
-              </p>
-              <p class="recommendation-info">
-                <a
-                  href="https://www.linkedin.com/in/adri-m%C3%B3denes-zapico-4911b6215/"
-                  target="_blank"
-                >
-                  Adri Módenes Zapico
-                  <br />
-                  Senior Full Stack Developer & Tech Lead en Wattwin
-                </a>
-              </p>
-            </div>
-            <div class="recommendation-card">
-              <p class="recommendation-content">
-                He tenido el placer de estudiar junto a Gerard desde el primer
-                año de carrera, y solo puedo hablar en términos positivos sobre
-                mi experiencia con él. Gerard es un estudiante excepcional,
-                dotado de una gran capacidad para procesar la teoría y aplicar
-                estos conocimientos de manera práctica. Posee notables
-                habilidades para el aprendizaje, la síntesis de información y el
-                desarrollo de ideas y conceptos teóricos. A lo largo de nuestros
-                estudios, he colaborado con Gerard en diversos proyectos
-                universitarios. En cada uno de ellos, ha demostrado una gran
-                constancia e implicación, comprendiendo a fondo los objetivos
-                establecidos y ejecutándolos con una precisión sobresaliente.
-                Por estas razones, no tengo ninguna duda en recomendar a Gerard
-                como una persona altamente competente y dedicada en cualquier
-                ámbito académico o profesional, siempre con ganas de evolucionar
-                y mejorar sus conocimientos.
-              </p>
-              <p class="recommendation-info">
-                <a
-                  href="https://www.linkedin.com/in/adrihernandezingeniero/"
-                  target="_blank"
-                >
-                  Adrián Hernández Navarrete
-                  <br />
-                  Consultor de Ciberseguridad. Graduado en Ingeniería
-                  Informática (UAB). Català.
-                </a>
-              </p>
-            </div>
+          <div class="basic-card">
+            <a
+              href="https://www.linkedin.com/in/adri-m%C3%B3denes-zapico-4911b6215/"
+              target="_blank"
+            >
+              <div class="basic-card-info">
+                <div class="card-title">
+                  <div class="card-name">
+                    <h3>Adri Módenes Zapico</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35">
+                      <path
+                        d="M 21.332031 4.292969 L 19.917969 5.707031 L 24.210938 10 L 22 10 C 14.832031 10 9 15.832031 9 23 L 11 23 C 11 16.914063 15.914063 12 22 12 L 24.210938 12 L 19.917969 16.292969 L 21.332031 17.707031 L 28.039063 11 Z M 5 11 L 5 27 L 27 27 L 27 21 L 25 21 L 25 25 L 7 25 L 7 11 Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>Senior Full Stack Developer & Tech Lead en Wattwin</h4>
+                </div>
+                <p>
+                  Ha sido todo un placer trabajar con Gerard este último año. He
+                  podido presenciar su evolución día a día, ya que he sido uno
+                  de sus mentores durante su estancia en la empresa, y puedo
+                  asegurar que ha tenido una evolución sobresaliente y una
+                  actitud ejemplar. Además ha sabido adaptarse muy rápido a
+                  nuestra metodología y forma de trabajar. Por ello, destacar su
+                  capacidad de autoaprendizaje, ya que, con poca experiencia en
+                  el sector, ha sabido afrontar tareas complejas él solo. Ha
+                  aportado mucho al equipo, tanto personal como laboralmente,
+                  demostrando que es un gran compañero; estoy seguro que no lo
+                  olvidaremos. Durante este año de trabajo, ha estado
+                  principalmente trabajando en el proyecto del Autosetup, el
+                  cual es un proyecto muy importante para Wattwin, ya que
+                  permitirá abrirnos al mercado y abarcar a más clientes sin
+                  necesidad de intervenir inicialmente en el setup. Su
+                  desarrollo ha conllevado la refactorización del login y
+                  registro, para permitir el auto registro, así como la
+                  implementación del 2FA (Doble factor de autenticación) y la
+                  integración de Wattwin con Microsoft para habilitar el Single
+                  Sign On, mejorando así la seguridad en el proceso de
+                  autenticación de nuestros clientes. Todo ello desarrollado en
+                  tiempos que incluso han superando las planificaciones, así
+                  como la excelente calidad de su trabajo. Se que llegará lejos
+                  en este mundillo, ya que lo vale y lo ha demostrado día a día
+                  en Wattwin. Por esto, y todo lo que nos ha aportado,
+                  recomiendo encarecidamente a Gerard, estoy seguro que en
+                  cualquier otro puesto de trabajo dará la talla y podrá
+                  integrarse sin problemas. Le espera un buen futuro, no tengo
+                  dudas.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="basic-card">
+            <a
+              href="https://www.linkedin.com/in/adrihernandezingeniero/"
+              target="_blank"
+            >
+              <div class="basic-card-info">
+                <div class="card-title">
+                  <div class="card-name">
+                    <h3>Adrián Hernández Navarrete</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35">
+                      <path
+                        d="M 21.332031 4.292969 L 19.917969 5.707031 L 24.210938 10 L 22 10 C 14.832031 10 9 15.832031 9 23 L 11 23 C 11 16.914063 15.914063 12 22 12 L 24.210938 12 L 19.917969 16.292969 L 21.332031 17.707031 L 28.039063 11 Z M 5 11 L 5 27 L 27 27 L 27 21 L 25 21 L 25 25 L 7 25 L 7 11 Z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>
+                    Consultor de Ciberseguridad. Graduado en Ingeniería
+                    Informática (UAB). Català.
+                  </h4>
+                </div>
+                <p>
+                  He tenido el placer de estudiar junto a Gerard desde el primer
+                  año de carrera, y solo puedo hablar en términos positivos
+                  sobre mi experiencia con él. Gerard es un estudiante
+                  excepcional, dotado de una gran capacidad para procesar la
+                  teoría y aplicar estos conocimientos de manera práctica. Posee
+                  notables habilidades para el aprendizaje, la síntesis de
+                  información y el desarrollo de ideas y conceptos teóricos. A
+                  lo largo de nuestros estudios, he colaborado con Gerard en
+                  diversos proyectos universitarios. En cada uno de ellos, ha
+                  demostrado una gran constancia e implicación, comprendiendo a
+                  fondo los objetivos establecidos y ejecutándolos con una
+                  precisión sobresaliente. Por estas razones, no tengo ninguna
+                  duda en recomendar a Gerard como una persona altamente
+                  competente y dedicada en cualquier ámbito académico o
+                  profesional, siempre con ganas de evolucionar y mejorar sus
+                  conocimientos.
+                </p>
+              </div>
+            </a>
           </div>
         </section>
       </main>

@@ -5,10 +5,19 @@ body {
   height: 100%;
   font-family: system-ui;
   color: #d9e1ef;
-  background-color: #0b192f;
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
+  background-color: #0b192f;
+  background-image: linear-gradient(
+    to right top,
+    #0b192f,
+    #0b1a31,
+    #0c1b33,
+    #0c1c35,
+    #0d1d37
+  );
+  background-attachment: fixed;
 }
 
 ::-webkit-scrollbar {
@@ -62,6 +71,12 @@ main section {
   padding: 20px;
   height: 50px;
   font-size: 20px;
+  position: fixed;
+  width: calc(100%);
+  background-color: #0b192f;
+  top: 0;
+  transition: top 0.5s ease;
+  z-index: 1;
 }
 
 .nav-bar ul {
@@ -71,10 +86,23 @@ main section {
   margin: 0;
   padding: 0;
   align-items: center;
+  margin-right: 60px;
 }
 
 .nav-bar li {
   margin-left: 30px;
+}
+
+.nav-bar img {
+  width: 50px;
+}
+
+.nav-bar a {
+  fill: #b9c6e0;
+}
+
+.nav-bar.hide {
+  top: -100px;
 }
 
 .logo-name img {
@@ -126,30 +154,35 @@ h3,
 
 .about-me-img img {
   border-radius: 20px;
-  height: 400px;
+  height: 375px;
 }
 
-.experience-card {
-  padding: 10px;
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.basic-card {
+  padding: 20px;
   border-radius: 10px;
-  margin: -10px;
+  margin: -20px;
 }
 
-.experience-card:hover {
+.basic-card:hover {
   background-color: rgba(156, 156, 156, 0.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
 
-.experience-card:hover h3,
-.experience-card:hover svg,
+.basic-card:hover h3,
+.basic-card:hover svg,
 .project-card:hover svg,
 .project-card:hover h3 {
   color: #63dbd5;
   fill: #63dbd5;
 }
 
-.experience-card h3 {
+.basic-card h3 {
   margin: 0;
 }
 
@@ -203,9 +236,10 @@ h3,
 
 .project-card {
   width: 70%;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
-  margin: -10px;
+  margin: -20px;
+  margin-bottom: 40px;
 }
 
 .project-card a {
@@ -228,4 +262,8 @@ h3,
 
 .project-description {
   margin-left: 20px;
+}
+
+.reviews .basic-card {
+  margin-bottom: 40px;
 }
