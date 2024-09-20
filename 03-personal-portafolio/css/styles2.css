@@ -11,13 +11,29 @@ body {
   flex-direction: column;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b192f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a566f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 a:hover {
-  color: #d9e1ef;
+  color: #63dbd5;
 }
 
 p,
@@ -33,6 +49,10 @@ h3 {
 
 h2 {
   font-size: 35px;
+}
+
+main section {
+  margin-bottom: 200px;
 }
 
 .nav-bar {
@@ -76,7 +96,10 @@ h2 {
 }
 
 .title h2,
-h1 {
+h1,
+h4,
+h3,
+.education p {
   margin: 0;
 }
 
@@ -106,18 +129,22 @@ h1 {
   height: 400px;
 }
 
-.experience {
-  margin-top: 200px;
-}
-
 .experience-card {
   padding: 10px;
   border-radius: 10px;
+  margin: -10px;
 }
 
 .experience-card:hover {
   background-color: rgba(156, 156, 156, 0.05);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.experience-card:hover h3,
+.experience-card:hover svg {
+  color: #63dbd5;
+  fill: #63dbd5;
 }
 
 .experience-card h3 {
@@ -126,11 +153,48 @@ h1 {
 
 .experience-title {
   display: flex;
+  flex-direction: column;
+}
+
+.experience-title h4 {
+  color: #606f84;
+}
+
+.experience-name {
+  display: flex;
   flex-direction: row;
+  height: 30px;
+  align-items: center;
 }
 
 .experience-title svg {
-  width: 50px;
+  width: 40px;
   margin-left: 10px;
   fill: #b9c6e0;
+  vertical-align: middle;
+}
+
+.education p {
+  margin-bottom: 20px;
+}
+
+.technologies {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.technologies li {
+  margin: 0 10px 10px 0;
+  background-color: #152b39;
+  color: #63ddcc;
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+}
+
+.education ul {
+  margin-bottom: 20px;
 }
