@@ -142,7 +142,9 @@ h3,
 }
 
 .experience-card:hover h3,
-.experience-card:hover svg {
+.experience-card:hover svg,
+.project-card:hover svg,
+.project-card:hover h3 {
   color: #63dbd5;
   fill: #63dbd5;
 }
@@ -151,23 +153,23 @@ h3,
   margin: 0;
 }
 
-.experience-title {
+.card-title {
   display: flex;
   flex-direction: column;
 }
 
-.experience-title h4 {
+.card-title h4 {
   color: #606f84;
 }
 
-.experience-name {
+.card-name {
   display: flex;
   flex-direction: row;
   height: 30px;
   align-items: center;
 }
 
-.experience-title svg {
+.card-title svg {
   width: 40px;
   margin-left: 10px;
   fill: #b9c6e0;
@@ -197,4 +199,33 @@ h3,
 
 .education ul {
   margin-bottom: 20px;
+}
+
+.project-card {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: -10px;
+}
+
+.project-card a {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-card:hover {
+  background-color: rgba(156, 156, 156, 0.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.project-img img {
+  width: 200px;
+  height: auto;
+  border: 3px solid #252d3d;
+  border-radius: 5px;
+}
+
+.project-description {
+  margin-left: 20px;
 }
