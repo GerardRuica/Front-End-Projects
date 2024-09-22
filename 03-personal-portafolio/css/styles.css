@@ -72,12 +72,18 @@ main section {
   height: 40px;
   font-size: 20px;
   position: fixed;
-  width: calc(100%);
+  width: 100%;
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   top: 0;
   transition: top 0.5s ease;
   z-index: 1;
+}
+
+.nav-bar img {
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
 }
 
 .nav-bar ul {
@@ -94,22 +100,49 @@ main section {
   margin-left: 30px;
 }
 
-.nav-bar img {
-  width: 50px;
-}
-
 .nav-bar a {
-  fill: #b9c6e0;
+  text-decoration: none;
+  color: #b9c6e0;
 }
 
-.nav-bar.hide {
-  top: -100px;
+.dropdown {
+  display: none;
+  position: relative;
 }
 
-.nav-bar img {
-  height: 50px;
-  width: auto;
-  margin-left: 20px;
+.dropdown-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #b9c6e0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #142d55;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 200px;
+}
+
+.dropdown-content a {
+  color: #d9e1ef;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-btn:focus + .dropdown-content,
+.dropdown-content:hover {
+  display: block;
 }
 
 .title {
@@ -387,5 +420,18 @@ h3,
     width: 30px;
     height: 30px;
     fill: #95a3b7;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .nav-bar img {
+    margin-right: auto; /* Mantener el logo a la izquierda */
   }
 }
