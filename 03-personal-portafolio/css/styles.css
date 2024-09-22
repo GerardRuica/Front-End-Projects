@@ -64,6 +64,10 @@ main section {
   margin-bottom: 200px;
 }
 
+.nav-bar.hide {
+  top: -100px;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -102,7 +106,6 @@ main section {
 
 .nav-bar a {
   text-decoration: none;
-  color: #b9c6e0;
 }
 
 .dropdown {
@@ -137,7 +140,7 @@ main section {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #0f223f;
 }
 
 .dropdown-btn:focus + .dropdown-content,
@@ -365,7 +368,7 @@ h3,
 
 @media screen and (max-width: 768px) {
   main section {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .all-content {
@@ -432,6 +435,10 @@ h3,
   }
 
   .nav-bar img {
-    margin-right: auto; /* Mantener el logo a la izquierda */
+    margin-right: auto;
+  }
+
+  section {
+    padding-top: 60px;
   }
 }

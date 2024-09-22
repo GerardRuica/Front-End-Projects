@@ -8,10 +8,13 @@ window.addEventListener("scroll", function () {
     window.pageYOffset || document.documentElement.scrollTop;
 
   if (disableScrollCheck) return;
-  if (currentScroll > lastScrollTop) {
-    navBar.classList.add("hide");
-  } else if (currentScroll < lastScrollTop && currentScroll > 0) {
-    navBar.classList.remove("hide");
+
+  if (window.innerWidth > 768) {
+    if (currentScroll > lastScrollTop) {
+      navBar.classList.add("hide");
+    } else if (currentScroll < lastScrollTop && currentScroll > 0) {
+      navBar.classList.remove("hide");
+    }
   }
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
@@ -19,7 +22,10 @@ window.addEventListener("scroll", function () {
 
 links.forEach((link) => {
   link.addEventListener("click", function () {
-    navBar.classList.add("hide");
+    if (window.innerWidth > 768) {
+      navBar.classList.add("hide");
+    }
+
     disableScrollCheck = true;
 
     setTimeout(() => {
