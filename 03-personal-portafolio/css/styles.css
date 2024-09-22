@@ -357,6 +357,10 @@ h3,
     margin: 0;
   }
 
+  .about-me-img img {
+    height: 350px;
+  }
+
   .project-card {
     width: 95%;
   }
@@ -431,11 +435,12 @@ h3,
 
   .dropdown {
     display: block;
-    padding-right: 30px;
+    padding-right: 40px;
   }
 
   .nav-bar img {
     margin-right: auto;
+    margin-left: 0;
   }
 
   section {
