@@ -34,7 +34,6 @@ body {
   position: relative;
   margin: 20px 0;
   padding: 0;
-  /*background-color: #3aca2d;*/
 }
 
 .timeline:before {
@@ -51,10 +50,7 @@ body {
 .timeline-item {
   margin-bottom: 20px;
   position: relative;
-  width: 100%;
   padding-right: 20px;
-  text-align: right;
-  /*background-color: aqua;*/
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -73,7 +69,6 @@ body {
   position: absolute;
   width: 10px;
   height: 10px;
-
   background-color: rebeccapurple;
   border-radius: 50%;
   top: 8px;
