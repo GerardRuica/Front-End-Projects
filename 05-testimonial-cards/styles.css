@@ -1,0 +1,67 @@
+html,
+body {
+  font-family: system-ui;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  font-weight: normal; /
+}
+
+/*####################################################################################*/
+
+.card1-container {
+  height: auto;
+
+  display: inline-block;
+}
+
+.card1-content {
+  margin: 10px;
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 100px;
+  color: aliceblue;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card1-content::after {
+  content: "";
+  position: absolute;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 14px solid #1e1e1e;
+  margin-left: 15px;
+}
+
+.card1-text,
+.card1-comment {
+  margin: 15px;
+}
+
+.card1-profile {
+  margin: 20px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card1-profile .card1-profile-info {
+  margin-left: 20px;
+}
+
+.card1-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #a3a2a2;
+}
+
+/*####################################################################################*/
