@@ -3,26 +3,34 @@ body {
   font-family: system-ui;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-h2,
+h1 h2,
 h3,
+h4,
+h5,
 p {
   margin: 0;
-  font-weight: normal; /
+  font-weight: normal;
+}
+
+.separator {
+  margin-left: 20px;
 }
 
 /*####################################################################################*/
 
 .card1-container {
   height: auto;
-
   display: inline-block;
+  margin: 10px;
 }
 
 .card1-content {
-  margin: 10px;
   min-width: 100px;
   max-width: 300px;
   min-height: 100px;
@@ -38,7 +46,7 @@ p {
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
   border-top: 14px solid #1e1e1e;
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
 .card1-text,
@@ -46,14 +54,16 @@ p {
   margin: 15px;
 }
 
-.card1-profile {
+.card1-profile,
+.card2-profile {
   margin: 20px 10px 10px 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.card1-profile .card1-profile-info {
+.card1-profile .card1-profile-info,
+.card2-profile .card2-profile-info {
   margin-left: 20px;
 }
 
@@ -62,6 +72,80 @@ p {
   height: 60px;
   border-radius: 50px;
   background-color: #a3a2a2;
+}
+
+/*####################################################################################*/
+
+.card2-container {
+  height: auto;
+  color: black;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.card2-content {
+  margin: 15px;
+  min-width: 100px;
+  max-width: 300px;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.card2-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #a3a2a2;
+  margin-left: 5px;
+}
+
+/*####################################################################################*/
+
+.card3-container {
+  max-width: 700px;
+  height: auto;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.card3-container img {
+  border-radius: 15px;
+  background-color: #a3a2a2;
+  width: 250px;
+  height: 250px;
+}
+
+.card3-content {
+  margin-left: 15px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  color: aliceblue;
+  max-height: 250px;
+}
+
+.card3-container .card3-content h3,
+.card3-container .card3-content h5,
+.card3-container .card3-content p {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .card3-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card3-container .card3-content {
+    margin-top: 15px;
+    margin-left: 0;
+    width: 210px;
+    max-height: 400px;
+  }
 }
 
 /*####################################################################################*/
