@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible form UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="form-container" action="/submit" method="POST">
+      <div class="form-content">
+        <label for="nombre" style="color: white">Nombre completo</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="email" style="color: white">Email</label><br />
+        <input type="text" id="email" name="email" required /><br /><br />
+
+        <label for="password" style="color: white">Contraeña</label><br />
+        <input type="text" id="password" name="password" required /><br /><br />
+
+        <label for="repeatPassword" style="color: white"
+          >Repite contraseña</label
+        ><br />
+        <input
+          type="text"
+          id="repeatPassword"
+          name="repeatPassword"
+          required
+        /><br /><br />
+
+        <input class="submit-btn" type="submit" value="Enviar" />
+      </div>
+      <div class="form-progress">
+        <div class="percentage">aa</div>
+        <div class="done-tasks">ss</div>
+      </div>
+    </form>
+  </body>
+</html>

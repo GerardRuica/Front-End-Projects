@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+  background-color: #0b192f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+  font-size: 12px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-container {
+  width: 300px;
+  background-color: #333333;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.form-content {
+  width: 50%;
+}
+
+.form-progress {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #1971c2;
+}
+
+.percentage {
+  flex: 1;
+  background-color: aqua;
+}
+
+.done-tasks {
+  flex: 1;
+  background-color: bisque;
+}
