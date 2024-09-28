@@ -15,6 +15,10 @@ input[type="password"] {
   box-sizing: border-box;
 }
 
+label {
+  color: white;
+}
+
 .form-container {
   width: 300px;
   background-color: #333333;
@@ -53,6 +57,7 @@ input[type="password"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 0 0 20px;
 }
 
 svg {
@@ -79,16 +84,25 @@ circle {
   transition: stroke-dashoffset 1s ease;
 }
 
+.percentage {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+}
+
 .tasks-container {
+  background-color: rgb(59, 59, 59);
+  margin: 10px 0 0 20px;
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  border-radius: 10px;
+  height: 100%;
 }
 
 .task-list {
   list-style: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   color: white;
+  font-size: 10px;
 }
