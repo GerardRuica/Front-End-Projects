@@ -29,15 +29,9 @@ input[type="password"] {
   width: 50%;
 }
 
-.form-progress {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .submit-btn {
   width: 100%;
+  height: 25px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -47,12 +41,54 @@ input[type="password"] {
   background-color: #1971c2;
 }
 
-.percentage {
-  flex: 1;
-  background-color: aqua;
+.progress-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.done-tasks {
+.progress-container {
   flex: 1;
-  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 5;
+  r: 40;
+  cx: 50;
+  cy: 50;
+}
+
+.circle-bg {
+  stroke: grey;
+}
+
+.circle {
+  stroke: white;
+  stroke-dasharray: 290;
+  stroke-dashoffset: 102;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.tasks-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
