@@ -5,51 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accessible form UI</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="funtions.js"></script>
   </head>
   <body>
-    <form class="form-container" action="/submit" method="POST">
+    <form id="form" class="form-container" action="/submit" method="POST">
       <div class="form-content">
-        <label for="nombre">Nombre completo</label><br />
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          placeholder="Nombre"
-          required
-        /><br /><br />
+        <div class="form-item">
+          <label for="name">Nombre completo</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre"
+            required
+            oninvalid="setCustomValidity(null)"
+          /><br />
+          <span id="name-error" class="error"></span>
+        </div>
 
-        <label for="email">Email</label><br />
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Email"
-          required
-        /><br /><br />
+        <div class="form-item">
+          <label for="email">Email</label><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          /><br />
+          <span id="email-error" class="error"></span>
+        </div>
 
-        <label for="password">Contraeña</label><br />
-        <input
-          type="text"
-          id="password"
-          name="password"
-          placeholder="Contraseña"
-          required
-        /><br /><br />
+        <div class="form-item">
+          <label for="password">Contraeña</label><br />
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="Contraseña"
+            required
+          /><br />
+          <span id="password-error" class="error"></span>
+        </div>
 
-        <label for="repeatPassword">Repite contraseña</label><br />
-        <input
-          type="text"
-          id="repeatPassword"
-          name="repeatPassword"
-          placeholder="Contraseña"
-          required
-        /><br /><br />
+        <div class="form-item">
+          <label for="repeatPassword">Repite contraseña</label><br />
+          <input
+            type="text"
+            id="repeatPassword"
+            name="repeatPassword"
+            placeholder="Contraseña"
+            required
+          /><br />
+          <span id="repeatPassword-error" class="error"></span>
+        </div>
 
-        <input class="submit-btn" type="submit" value="Enviar" />
+        <button
+          class="submit-btn"
+          onclick="validateForm(['name','email', 'password', 'repeatPassword'])"
+        >
+          Enviar
+        </button>
       </div>
       <div class="progress-form">
         <div class="progress-container">
-          <svg class="progress-circle" width="100" height="100">
+          <svg class="progress-circle">
             <circle class="circle-bg" />
             <circle class="circle" />
           </svg>
