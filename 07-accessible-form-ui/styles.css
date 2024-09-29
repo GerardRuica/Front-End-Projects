@@ -9,14 +9,30 @@ body {
   font-size: 12px;
 }
 
-input[type="text"],
-input[type="password"] {
+input {
+  all: unset;
+  background-color: #444444;
   width: 100%;
   box-sizing: border-box;
+  border: 1px solid #646464;
+  border-radius: 5px;
+  height: 25px;
+  margin-top: 4px;
+  padding: 5px;
+  font-weight: bold;
+  padding-left: 10px;
+  caret-color: white;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: #131313;
+  text-align: center;
 }
 
 label {
   color: white;
+  font-weight: bold;
 }
 
 .form-container {
@@ -42,7 +58,7 @@ label {
 }
 
 .submit-btn:hover {
-  background-color: #1971c2;
+  background-color: #212121;
 }
 
 .progress-form {
