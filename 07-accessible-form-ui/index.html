@@ -17,8 +17,8 @@
             id="name"
             name="name"
             placeholder="Nombre"
+            oninput="checkField('name')"
             required
-            oninvalid="setCustomValidity(null)"
           /><br />
           <span id="name-error" class="error"></span>
         </div>
@@ -30,6 +30,7 @@
             id="email"
             name="email"
             placeholder="Email"
+            oninput="checkField('email')"
             required
           /><br />
           <span id="email-error" class="error"></span>
@@ -42,6 +43,7 @@
             id="password"
             name="password"
             placeholder="Contraseña"
+            oninput="checkField('password')"
             required
           /><br />
           <span id="password-error" class="error"></span>
@@ -54,6 +56,7 @@
             id="repeatPassword"
             name="repeatPassword"
             placeholder="Contraseña"
+            oninput="checkField('repeatPassword')"
             required
           /><br />
           <span id="repeatPassword-error" class="error"></span>
@@ -72,14 +75,14 @@
             <circle class="circle-bg" />
             <circle class="circle" />
           </svg>
-          <div class="percentage">75%</div>
+          <div class="percentage">0%</div>
         </div>
         <div class="tasks-container">
           <ul class="task-list">
-            <li>Nombre completo</li>
-            <li>Email</li>
-            <li>Contraseña</li>
-            <li>Repetir contraseña</li>
+            <li id="task-name">Nombre completo</li>
+            <li id="task-email">Email</li>
+            <li id="task-password">Contraseña</li>
+            <li id="task-repeatPassword">Repetir contraseña</li>
           </ul>
         </div>
       </div>
